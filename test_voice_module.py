@@ -91,11 +91,11 @@ def main():
     try:
         # Create and start the voice module
         voice_module = VoiceModule(
-            model_size="small",
+            model_size="medium",  # Use 'tiny' for faster but less accurate results
             wake_word="drone",
             silence_threshold=0.02,  # Adjust this value
             silence_duration=1.0,    # Adjust this value
-            input_device_index=1     # Try different indices (1, 5, or 9)
+            input_device_index=17     # Try different indices (1, 5, or 9)
         )
         
         # Start the voice module with our command handler
@@ -118,3 +118,5 @@ def main():
 
 if __name__ == "__main__":
     sys.exit(main())
+
+

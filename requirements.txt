@@ -1,7 +1,6 @@
 # Core dependencies
 numpy
-torch
-whisper-openai
+vosk
 pyaudio
 sounddevice
 webrtcvad

@@ -48,13 +48,13 @@ class VoiceModule:
     
     def __init__(
         self,
-        model_size: str = "base",
+        model_size: str = "medium",
         wake_word: str = "drone",
         sample_rate: int = 16000,
         chunk_size: int = 1024,
         silence_threshold: float = 0.03,
         silence_duration: float = 1.5,
-        input_device_index: int = 0,
+        input_device_index: int = 17,
     ):
         """Initialize the voice module.
         
